@@ -1,0 +1,17 @@
+{
+    "123456789": {
+        "first_name": "\u0418\u0432\u0430\u043d",
+        "username": "ivan_hero",
+        "character": {
+            "name": "\u0413\u0435\u0440\u043e\u0439 \u0431\u0435\u0437 \u0438\u043c\u0435\u043d\u0438",
+            "level": 1,
+            "progress": 0,
+            "gold": 100,
+            "crypto": 0,
+            "strength": 5,
+            "dexterity": 5,
+            "endurance": 5,
+            "intelligence": 5
+        }
+    }
+}

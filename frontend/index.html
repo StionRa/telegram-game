@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZELVANTIS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">ZELVANTIS</div>
+    <div class="ticker">Бегущая строка с информацией</div>
+
+    <!-- Добавляем отображение имени пользователя и имени персонажа -->
+    <div class="user-info">
+        👤 <span id="username">Загрузка...</span> | 🎭 <span id="character-name">Загрузка...</span>
+    </div>
+    
+    <div class="avatar">
+        <img id="avatar" src="img/avatar-placeholder.webp" alt="Аватар">
+    </div>
+    
+    <div class="user-data">
+        <div>🆙 Уровень: <span id="level">0</span></div>
+        <div>📊 <span id="progress">0%</span></div>
+        <div>💰 <span id="gold">0</span></div>
+        <div>💎 <span id="crypto">0</span></div>
+    </div>
+    
+    <div class="footer">
+        <div onclick="showModal()">📜</div>
+        <div onclick="showModal()">⚔️</div>
+        <div onclick="showModal()">⚙️</div>
+    </div>
+    
+    <div class="modal" id="modal">Пока в разработке</div>
+    
+    <script src="js/script.js"></script>
+    <script>
+        function showModal() {
+            document.getElementById('modal').classList.add('show');
+            setTimeout(() => {
+                document.getElementById('modal').classList.remove('show');
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

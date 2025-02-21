@@ -1,0 +1,143 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Шапка */
+.header {
+    width: 100%;
+    background: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Бегущая строка */
+.ticker {
+    width: 100%;
+    background: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    top: 40px;
+    left: 0;
+}
+
+.ticker span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+}
+
+/* Аватар */
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: 110px; /* Отступ ниже user-info */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Само изображение */
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Данные игрока */
+.user-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 70px;
+}
+.user-data div {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Информация о пользователе */
+.user-info {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background: #ecf0f1;
+    padding: 8px;
+    position: fixed;
+    top: 70px; /* Учитывает высоту шапки и бегущей строки */
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Футер */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #34495e;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer div {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.footer div:hover {
+    background: #ecf0f1;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.modal.show {
+    display: block;
+}
